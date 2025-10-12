@@ -251,7 +251,7 @@ export default function VehicleInspectionForm() {
     try {
       // Prepare data for submission
       const submissionData: any = {
-        "Formulario": "Motorysa183",
+        "Formulario": "motorysa183",
         "Responsable": responsible,
         "Placa Vehiculo": plateNumber,
         "Fecha de Control": controlDate,
