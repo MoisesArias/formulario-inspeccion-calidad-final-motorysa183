@@ -81,7 +81,7 @@ export default function VehicleInspectionForm() {
   const responsibleRef = useRef<HTMLDivElement>(null);
   const plateRef = useRef<HTMLDivElement>(null);
   const dateRef = useRef<HTMLDivElement>(null);
-  const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const questionRefs = useRef<(HTMLDivElement)[]>([]);
 
   // Auto-complete form when Quality Control OK is checked
   useEffect(() => {
