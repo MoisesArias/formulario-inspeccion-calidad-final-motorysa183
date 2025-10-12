@@ -78,9 +78,9 @@ export default function VehicleInspectionForm() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   // Refs for scrolling to errors
-  const responsibleRef = useRef<HTMLDivElement>(null);
-  const plateRef = useRef<HTMLDivElement>(null);
-  const dateRef = useRef<HTMLDivElement>(null);
+  const responsibleRef = useRef<HTMLDivElement | null>(null);
+  const plateRef = useRef<HTMLDivElement | null>(null);
+  const dateRef = useRef<HTMLDivElement | null>(null);
   const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // Auto-complete form when Quality Control OK is checked
@@ -168,7 +168,7 @@ export default function VehicleInspectionForm() {
   const validateForm = () => {
     const newErrors: Record<string, boolean> = {};
     const newObservationErrors: Record<string, boolean> = {};
-    let firstErrorRef: React.RefObject<HTMLDivElement> | null = null;
+    let firstErrorRef: React.RefObject<HTMLDivElement | null> | null = null;
     let isValid = true;
     
     // Validate responsible
