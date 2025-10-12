@@ -81,7 +81,7 @@ export default function VehicleInspectionForm() {
   const responsibleRef = useRef<HTMLDivElement>(null);
   const plateRef = useRef<HTMLDivElement>(null);
   const dateRef = useRef<HTMLDivElement>(null);
-  const questionRefs = useRef<(HTMLDivElement)[]>([]);
+  const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // Auto-complete form when Quality Control OK is checked
   useEffect(() => {
@@ -204,7 +204,8 @@ export default function VehicleInspectionForm() {
         // Validate main selection
         if (!formData[question]) {
           newErrors[question] = true;
-          if (!firstErrorRef) firstErrorRef = { current: questionRefs.current[index] };
+          const refEl = questionRefs.current[index];
+          if (!firstErrorRef && refEl) firstErrorRef = { current: refEl };
           isValid = false;
         }
         
@@ -469,7 +470,7 @@ export default function VehicleInspectionForm() {
                   return (
                     <div 
                       key={index} 
-                      ref={el => questionRefs.current[index] = el}
+                      ref={(el: HTMLDivElement | null) => { questionRefs.current[index] = el; }}
                       className="space-y-3"
                     >
                       <label className="text-sm font-bold text-gray-800">
