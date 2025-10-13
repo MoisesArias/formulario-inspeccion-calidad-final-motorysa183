@@ -381,7 +381,7 @@ export default function VehicleInspectionForm() {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <Card className="shadow-lg bg-white/90 backdrop-blur-sm">
+        <Card className="shadow-lg bg-white/70 backdrop-blur-sm">
           <CardHeader className="text-center pb-2">
             <CardTitle className="text-3xl font-bold text-gray-800">
               Control de Calidad Final Motorysa 183
