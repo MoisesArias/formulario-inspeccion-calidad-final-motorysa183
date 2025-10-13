@@ -371,9 +371,17 @@ export default function VehicleInspectionForm() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6">
+    <div 
+      className="min-h-screen py-12 px-4 sm:px-6"
+      style={{
+        backgroundImage: "url('/img/fondo.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="max-w-6xl mx-auto">
-        <Card className="shadow-lg">
+        <Card className="shadow-lg bg-white/90 backdrop-blur-sm">
           <CardHeader className="text-center pb-2">
             <CardTitle className="text-3xl font-bold text-gray-800">
               Control de Calidad Final Motorysa 183
