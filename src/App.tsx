@@ -29,7 +29,7 @@ const questions = [
   "Espejos retrovisores",
   "Comprobar daños de transporte en lunestas, pintura, piezas",
   "Inspeccion exterior (golpes, rayones)",
-  "Verificar testigos de control",
+  "Reprogramación de Mantenimiento",
   "Revisar radio (Sintonizacion de emisoras)",
   "Control visual de habitaculo: Estado y daños",
   "Revisar funcionamiento del aire acondicionado",
@@ -40,11 +40,11 @@ const questions = [
   "Inspeccion testigos de tablero de instrumentos",
   "Hoja de mantenimiento",
   "Formato solicitud y cotizacion de repuesto",
-  "Consulta en EVA / Codificacion WIS - ASRA",
+  "Consulta en EVA / Codificacion WIS - ASRA (Ejecución KDM y RECALL)",
   "Formato FVVT (Formato diagnostico)",
   "Test de entrada y test de salida a las horas adecuadas",
-  "Documentos de garantias",
-  "Orden de Servicio",
+  "Documentos de Garantias",
+  "Orden de Servicio (Firmas OT, HD, Factura, Check List MTO)",
 ];
 
 const answerOptions = [
